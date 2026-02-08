@@ -79,6 +79,7 @@ const Header = () => {
         md:hidden absolute w-full bg-[#D4AF37] border-t border-[#1A1608]/10 transition-all duration-300 ease-in-out overflow-hidden shadow-2xl
         ${isMenuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'}
       `}>
+     
         <div className="flex flex-col items-center py-8 gap-6">
           <a href="#home" onClick={() => setIsMenuOpen(false)} className={darkLink}>Home</a>
           <a href="#about" onClick={() => setIsMenuOpen(false)} className={darkLink}>About us</a>

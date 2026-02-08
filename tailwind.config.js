@@ -1,25 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-  extend: {
-  colors: {
-    "primary": "#C9A24D",
-    "gold-light": "#E6C97A",
-    "gold-dark": "#9E7C19",
-    "dark-bg": "#0B0A08",
-    "dark-card": "#1A1408",
-    "dark-border": "#3A2E12",
-    "text-gold": "#E3C76A",
-    "text-muted": "#C0B07A",
-  },
-
-    fontFamily: {
-        heading: ["Playfair Display", "serif"],
-        body: ["Poppins", "sans-serif"],
+    extend: {
+      colors: {
+        primary: {
+          50: "#F4E3A0", // light gold
+          500: "#A4771F", // dark gold
+        },
+        surface: {
+          DEFAULT: "#231803", // main background
+        },
+      },
+      backgroundImage: {
+        "primary-gradient": "linear-gradient(90deg, #F4E3A0 0%, #A4771F 100%)",
+        "primary-gradient-reverse":
+          "linear-gradient(90deg, #A4771F 0%, #F4E3A0 100%)",
       },
     },
   },
